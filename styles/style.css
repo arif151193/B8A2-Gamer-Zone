@@ -1,0 +1,145 @@
+/* nav-bar-section starts here */
+.nav-bar-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.nav-bar-title{
+    display: flex;
+}
+.nav-bar-content{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+/* banner-section starts here */
+.banner-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-content{
+    background-color: fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
+    /* background-color: #8C57EE0D, #F144AE0D; */
+}
+/* we-are-gamer section starts here  */
+.we-are-gamer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* funny-videos section starts here  */
+.funny-videos{
+    /* border: 2px solid black; */
+    text-align: center;
+}
+.funny-videos-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px 65px;
+}
+.funny-item img{
+    width: 280px;
+    height: auto;
+}
+/* play-instantly section starts here  */
+.play-instantly{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+.overlap-pic{
+    width: 150px;
+    margin-top: -130px;
+    margin-left: 700px;
+    margin-bottom: 100px;
+}
+/* play-online section starts here  */
+.play-online{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.overlap-pic2{
+    width: 150px;
+    margin-top: -100px;
+    margin-left: 450px;
+    margin-bottom: 100px;
+}
+/* career section starts here  */
+.career{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center; */
+    align-items: center;
+}
+.vacancy{
+    display: flex;
+    gap: 20px;
+}
+/* game-area section starts here  */
+.game-area{
+
+}
+.game-area-lane1{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.game-area-lane2{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.game-item{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+.game-item:hover{
+    border: 1px solid pink;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: pink;
+}
+.game-item img{
+    width: 40px;
+    height: 40px;
+}
+
+/* footer section starts here  */
+footer{
+    align-items: cente;
+}
+.footer-title{
+    display: flex;
+}
+.footer-content{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.social-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.footer-policy{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+.footer-rights{
+    display: flex;
+    }
+
+
+
+
+@media screen and (msx-width: 576px) {
+    .nav-bar-section{
+        flex-direction: column;
+    }
+}
