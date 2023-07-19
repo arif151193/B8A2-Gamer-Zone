@@ -65,14 +65,9 @@
     justify-content: space-around;
     align-items: center;
     margin: 30px auto;
-    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
-}
-
-.banner-content {
-    background-color: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
-    padding: 5px 0;
-
-    /* background-color: #8C57EE0D, #F144AE0D; */
+    background-image: url('group14.png');
+    background-repeat: no-repeat;
+    background-position-x: left;
 }
 
 .banner-content h2 {
@@ -252,57 +247,47 @@
     margin: 5px 65px;
 }
 
-.funny-item img {
+.funny-item{
     width: 280px;
     height: auto;
     position: relative;
 }
+.image-img{
+    display: block;
+    width: 100%;
 
-/* .funny-item:hover {
-    border: #F948B2;
-    background-color: #3C354F;
-} */
-
-/* .play-now-overlay {
+}
+.image-overlay{
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #e612e6;
+    display: flex;
+    font-family: work sans;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
+    transition: opacity 0.25s;
 }
-.play-now-overlay:hover .overlay {
+.image-overlay:hover{
     opacity: 1;
-  }
+}
+.image-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.image-description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
 .watch-now-text{
-    color: white;
+    color: rgb(236, 22, 154);
     font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-} */
-
-/* .play-button {
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 20px;
-    font-weight: 600;
-    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: -250px;
-    margin-right: -280px;
-    visibility: hidden;
-} */
+}
 
 /* play-instantly section starts here  */
 .play-instantly {
@@ -313,7 +298,7 @@
 
 }
 
-.play-instantly-title {
+.play-instantly-content h2{
     text-align: right;
     font-family: Work Sans;
     font-size: 48px;
@@ -324,21 +309,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.play-instantly-title span{
+.play-instantly-content h3{
     color: #0B0223;
     font-family: Work Sans;
     font-size: 48px;
     font-weight: 700;
     text-align: right;
 }
-
-/* .no-downloads {
-    color: #0B0223;
-    font-family: Work Sans;
-    font-size: 48px;
-    font-weight: 700;
-    text-align: right;
-} */
 
 .play-instantly-content p {
     color: #534C64;
@@ -373,7 +350,7 @@
     line-height: 60px;
 }
 
-.play-online-content span{
+.play-online-content h3{
     color: #0B0223;
     font-family: Work Sans;
     font-size: 48px;
@@ -497,13 +474,6 @@
     justify-content: center;
     align-items: center;
     border: 2px solid black;
-    /* text-align: center; */
-    /* padding: 50px 200px;
-    padding-left: 400px; */
-    /* justify-content: center;
-    align-items: center;
-    /* text-align: center;
-    border: 2px solid firebrick; */
 }
 
 .footer-title {
@@ -537,7 +507,6 @@
     font-weight: 600;
     font-family: Work Sans;
     justify-content: center;
-    /* text-align: center; */
 }
 
 .social-links {
@@ -616,7 +585,6 @@
     .we-are-gamer-content p {
         text-align: center;
     }
-
     .play-instantly-photo img {
         width: 250px;
         height: 250px;
@@ -635,6 +603,9 @@
     }
 
     .play-online-content h2 {
+        text-align: center;
+    }
+    .play-online-content h3 {
         text-align: center;
     }
 
@@ -753,7 +724,10 @@
         margin-left: 230px;
         margin-top: -130px;
     }
-
+    .funny-videos-content{
+        justify-content: center;
+        align-items: center;
+    }
     .play-online {
         flex-direction: column-reverse;
     }
@@ -781,7 +755,7 @@
     }
 
     .career-content {
-        width: 100%;
+        width: 60%;
         padding: 30px 50px;
     }
 
